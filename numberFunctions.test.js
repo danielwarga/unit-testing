@@ -7,7 +7,6 @@ describe("getLargest", () => {
     test("getLargest is a function", () =>{
         expect(typeof getLargest).toBe("function");
     })
-    // console.log(getLargest);
 
     describe("It reports invalid inputs correctly.", () =>{
         test("It throws an error if one of the inputs is undefined.", () =>{
@@ -26,25 +25,6 @@ describe("getLargest", () => {
         ]).test("%s -> %s", (arr, expected) => {
             expect(getLargest(...arr)).toEqual(expected);
         })
-        each([
-            [[1, 2, 3], 1],
-            [[9, 8, 7], 7],
-            [[12, 36, 19], 12]
-        ]).test("%s -> %s", (arr, expected) => {
-            expect(getSmallest(...arr)).toEqual(expected);
-        })
-
-        //_____________same as____________
-        
-        // test("getLargest returns the largest value", () =>{
-        //     const result = getLargest(1, 2, 3);
-        //     expect(result).toEqual(3);
-        // })
-
-        // test("getLargest returns the largest value", () =>{
-        //     const result = getLargest(1, 2, 3);
-        //     expect(result).toEqual(3);
-        // })
     })
 })
 
