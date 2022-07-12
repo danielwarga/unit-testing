@@ -11,4 +11,7 @@ const getSmallest = (a, b, c) => {
 console.log(getLargest(...[1, 2, 3]))
 //Export the function so it's available to other files
 
-module.exports = getLargest;
+module.exports = {
+    getLargest,
+    getSmallest
+}
